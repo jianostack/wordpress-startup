@@ -1,7 +1,14 @@
 #!/usr/bin/env bash
 
 environment=$1
-
+echo "\n\n"
+echo "Let's push to WPengine."
+echo "Have you run composer install?"
+echo "\n"
+echo "If pushing to WPengine results in an error you may need to --force: "
+echo "git push production master --force"
+echo "Let's start anyway ..."
+echo "\n\n"
 echo "renaming to wp-config-tmp.php"
 mv "wp-config.php" "wp-config-tmp.php"
 echo "moving uploads to /Users/user/Downloads/"

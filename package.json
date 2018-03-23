@@ -3,12 +3,16 @@
     "gulp": "*",
     "gulp-concat": "*",
     "gulp-sass": "*",
-    "gulp-minify-css": "*",
+    "gulp-sourcemaps": "*",
     "gulp-uglify": "*",
     "gulp-clean-css": "*",
     "gulp-imagemin": "*",
     "browser-sync": "*",
-    "jshint": "*",
-    "gulp-jshint": "*"
+    "gulp-jshint": "*",
+    "gulp-useref": "*",
+    "gulp-if":"*",
+    "gulp-clean":"*",
+    "jshint":"*",
+    "del":"*"
   }
 }
