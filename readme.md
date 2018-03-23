@@ -1,14 +1,16 @@
 # WPengine startup kit
 
 ## Development 
-`$ composer install`
+`composer install`
 
-`$ npm i`
+`npm i`
 
-`$ gulp`
+`gulp`
+
+`sh wpstartup.sh`
 
 ## Distribution
-`$ gulp dist`
+`gulp dist`
 
 Add WPengine's [remote git servers](https://wpengine.com/git/). 
 
