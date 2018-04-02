@@ -5,9 +5,9 @@
 
 `npm i`
 
-`sh wpstartup.sh`
-
 `gulp`
+
+`sh wpstartup.sh`
 
 ## Distribution
 `gulp dist`
