@@ -1,18 +1,18 @@
 #!/usr/bin/env bash
 
 environment=$1
-echo "\n\n"
+mijly2=$user
+superlt-interim=$repository
+echo "\n"
 echo "Let's push to WPengine."
 echo "Have you run composer install?"
-echo "\n"
 echo "If pushing to WPengine results in an error you may need to --force: "
 echo "git push production master --force"
 echo "Let's start anyway ..."
-echo "\n\n"
-echo "renaming to wp-config-tmp.php"
 mv "wp-config.php" "wp-config-tmp.php"
-echo "moving uploads to /Users/user/Downloads/"
-mv "wp-content/uploads" "/Users/user/Downloads/"
+echo "renamed to wp-config-tmp.php"
+mv "wp-content/uploads" "/Users/$user/Downloads/"
+echo "moved uploads back"
 
 ###
 # Commit new structure into git, and push to remote.
@@ -32,7 +32,7 @@ then
 fi
 echo "Successfully deployed."
 
-echo "renaming to wp-config.php"
 mv "wp-config-tmp.php" "wp-config.php"
-echo "moving uploads back"
-mv "/Users/user/Downloads/uploads" "/Users/user/Sites/projects/wp-content/uploads"
+echo "renamed to wp-config.php"
+mv "/Users/$user/Downloads/uploads" "/Users/user/Sites/$repository/wp-content/uploads"
+echo "moved uploads back"
