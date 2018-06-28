@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 environment=$1
-mijly2=$user
-superlt-interim=$repository
+user=$user
+project=$repository
 echo "\n"
 echo "Let's push to WPengine."
 echo "Have you run composer install?"
