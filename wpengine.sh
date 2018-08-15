@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
 environment=$1
+USERDIR="user"
+project="project"
+
 echo "\n\n"
 echo "Let's push to WPengine."
 echo "Have you run composer install?"
@@ -11,8 +14,8 @@ echo "Let's start anyway ..."
 echo "\n\n"
 echo "renaming to wp-config-tmp.php"
 mv "wp-config.php" "wp-config-tmp.php"
-echo "moving uploads to /Users/user/Downloads/"
-mv "wp-content/uploads" "/Users/user/Downloads/"
+echo "moving uploads to /Users/$USERDIR/Downloads/"
+mv wp-content/uploads /Users/$USERDIR/Downloads/
 
 ###
 # Commit new structure into git, and push to remote.
@@ -23,7 +26,7 @@ git commit -am "WP Engine build from: $(git log -1 HEAD --pretty=format:%s)$(git
 # echo "Pushing to WP Engine..."
 if [ "$environment" == "staging" ]
 then
-  git push staging master
+  git push -f staging master
   git checkout master
 elif [ "$environment" == "production" ]
 then
@@ -33,6 +36,7 @@ fi
 echo "Successfully deployed."
 
 echo "renaming to wp-config.php"
-mv "wp-config-tmp.php" "wp-config.php"
+mv wp-config-tmp.php wp-config.php
 echo "moving uploads back"
-mv "/Users/user/Downloads/uploads" "/Users/user/Sites/projects/wp-content/uploads"
+mv /Users/$USERDIR/Downloads/uploads /Users/$USERDIR/Sites/$project/wp-content/uploads
+echo "Done."
