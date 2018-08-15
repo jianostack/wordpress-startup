@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 environment=$1
-USERDIR="user"
-project="project"
+USERDIR=" "
+project=" "
 
 echo "\n\n"
 echo "Let's push to WPengine."
