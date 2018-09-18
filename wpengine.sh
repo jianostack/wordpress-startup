@@ -2,7 +2,7 @@
 
 environment=$1
 TEMPSTORAGE="/Users/user/Downloads"
-UPLOADPATH="/Users/user/Sites/superlt-www/wp-content/uploads"
+UPLOADPATH="/Users/user/Sites/project/wp-content/uploads"
 
 echo "\n\n"
 echo "Let's push to WPengine."
