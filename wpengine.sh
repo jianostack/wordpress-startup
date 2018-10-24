@@ -6,12 +6,6 @@ UPLOADPATH="/Users/user/Sites/project/wp-content/uploads"
 
 echo "\n\n"
 echo "Let's push to WPengine."
-echo "Have you run composer install?"
-echo "\n"
-echo "If pushing to WPengine results in an error you may need to --force: "
-echo "git push production master --force"
-echo "Let's start anyway ..."
-echo "\n\n"
 echo "renaming to wp-config-tmp.php"
 mv "wp-config.php" "wp-config-tmp.php"
 echo "moving uploads"
@@ -39,4 +33,8 @@ echo "renaming to wp-config.php"
 mv wp-config-tmp.php wp-config.php
 echo "moving uploads back"
 mv $TEMPSTORAGE/uploads $UPLOADPATH
-echo "Done."
+echo "Done"
+echo "If pushing to WPengine results in an error you may need to --force: "
+echo "git push production master --force"
+echo "\n\n"
+
