@@ -9,6 +9,13 @@
 
 `sh wpstartup.sh`
 
+## wp-config.php
+
+```
+define( 'WP_HOME', 'http://localhost:8000' );
+define( 'WP_SITEURL', 'http://localhost:8000' );
+```
+
 ## Distribution
 `gulp dist`
 
