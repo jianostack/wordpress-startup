@@ -21,4 +21,6 @@ define( 'WP_SITEURL', 'http://localhost:8000' );
 
 Add WPengine's [remote git servers](https://wpengine.com/git/). 
 
-`sh wpengine.sh staging`
+In wpengine.sh change TEMPSTORAGE and UPLOADPATH.
+
+`sh wpengine.sh <environment> <branch>`
