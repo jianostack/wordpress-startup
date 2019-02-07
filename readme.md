@@ -1,22 +1,19 @@
 # WPengine startup kit
 
-## Development 
-`composer install`
-
-`npm i`
-
-`gulp`
+## Start script
 
 `sh wpstartup.sh`
 
-## wp-config.php
+## Create base theme
 
-```
-define( 'WP_HOME', 'http://localhost:8000' );
-define( 'WP_SITEURL', 'http://localhost:8000' );
-```
+https://underscores.me/
+
+## Development 
+
+`gulp`
 
 ## Distribution
+
 `gulp dist`
 
 Add WPengine's [remote git servers](https://wpengine.com/git/). 
