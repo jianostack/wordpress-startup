@@ -2,7 +2,11 @@
 
 composer install
 npm i
+mv wp-content tmp-wp-content
 mv composer.json tmp-composer.json
+mv wp-config.php tmp-wp-config.php
 cp -a wordpress/. .
+rm -rf wp-content
+mv tmp-wp-content wp-content
 mv tmp-composer.json composer.json
-cp wp-config-sample.php wp-config.php
+mv tmp-wp-config.php wp-config.php
