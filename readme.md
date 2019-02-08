@@ -4,7 +4,7 @@
 
 `sh wpstartup.sh`
 
-## Create base theme
+## Base theme
 
 https://underscores.me/
 
