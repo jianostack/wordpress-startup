@@ -8,15 +8,13 @@
 
 https://underscores.me/
 
-## Development 
-
-`gulp`
-
 ## Distribution
 
-`gulp dist`
+`npm run build`
 
-Add WPengine's [remote git servers](https://wpengine.com/git/). 
+`scp -r wp-content/uploads user@ip-address:/path-to/wp-content/uploads`
+
+Add WPengine's [remote git servers](https://wpengine.com/git/).
 
 In wpengine.sh change TEMPSTORAGE and UPLOADPATH.
 
