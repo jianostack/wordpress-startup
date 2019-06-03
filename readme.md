@@ -25,4 +25,5 @@ In wpengine.sh change TEMPSTORAGE and UPLOADPATH.
 ```
 define( 'WP_HOME', 'http://localhost:8000' );
 define( 'WP_SITEURL', 'http://localhost:8000' );
+define('FS_METHOD', 'direct');
 ```
