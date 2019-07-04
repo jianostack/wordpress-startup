@@ -10,7 +10,8 @@
         "wpackagist-plugin/advanced-custom-fields": "*",
         "wpackagist-plugin/sucuri-scanner":"*",
         "wpackagist-plugin/akismet":"*",
-        "wpackagist-plugin/jetpack":"*"
+        "wpackagist-plugin/jetpack":"*",
+        "wpackagist-plugin/better-search-replace":"*"
     },
     "autoload": {
         "psr-0": {
