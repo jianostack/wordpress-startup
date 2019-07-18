@@ -1,12 +1,15 @@
 # WordPress startup
 
-## Start script
+## Start up
 
-`sh wpstartup.sh`
+```
+composer install
+ln -s /full/source/path/wp-content /full/link/path/wordpress
+```
 
-## Base theme
+Valet link composer generated wordpress directory
 
-https://underscores.me/
+`valet link`
 
 ## Distribution
 
@@ -16,14 +19,11 @@ https://underscores.me/
 
 Add WPengine's [remote git servers](https://wpengine.com/git/).
 
-In wpengine.sh change TEMPSTORAGE and UPLOADPATH.
-
-`sh wpengine.sh <environment> <branch>`
+`git push staging master`
 
 ## wp-config.php
 
 ```
-define( 'WP_HOME', 'http://localhost:8000' );
-define( 'WP_SITEURL', 'http://localhost:8000' );
 define('FS_METHOD', 'direct');
+define( 'DISALLOW_FILE_EDIT', true );
 ```
