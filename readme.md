@@ -9,7 +9,7 @@ ln -s /full/source/path/wp-content /full/link/path/wordpress
 
 Valet link composer generated wordpress directory
 
-`valet link`
+`valet link site-name`
 
 ## Distribution
 
