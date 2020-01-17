@@ -7,7 +7,7 @@ composer install
 ln -s /full/source/path/wp-content /full/link/path/wordpress
 ```
 
-Valet link composer generated wordpress directory
+Valet link composer to generated wordpress directory
 
 `valet link site-name`
 
