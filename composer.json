@@ -1,4 +1,6 @@
 {
+    "name": "",
+    "description": "",
     "repositories":[
         {
             "type":"composer",
@@ -8,8 +10,6 @@
     "require": {
         "johnpbloch/wordpress": "*",
         "wpackagist-plugin/advanced-custom-fields": "*",
-        "wpackagist-plugin/akismet":"*",
-        "wpackagist-plugin/jetpack":"*",
         "wpackagist-plugin/better-search-replace":"*"
     },
     "autoload": {

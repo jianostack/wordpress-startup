@@ -1,7 +1,6 @@
 wordpress
 assets
 vendor
-composer.lock
 tmp
 node_modules
 
