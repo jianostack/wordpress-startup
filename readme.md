@@ -1,17 +1,16 @@
 # WordPress startup
 
-## Start up
+## Localhost
 
 ```
+brew install wp-cli
 composer install
-ln -s /full/source/path/wp-content /full/link/path/wordpress
+wp core download --skip-content
+wp theme install twentytwentyone
+cp wp-config-sample.php wp-config.php
 ```
 
-Valet link composer to generated wordpress directory
-
-`valet link site-name`
-
-## Distribution
+## WPengine deployment
 
 `npm run build`
 
